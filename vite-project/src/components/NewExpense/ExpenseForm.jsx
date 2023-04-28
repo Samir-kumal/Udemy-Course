@@ -16,6 +16,8 @@ const ExpenseForm = (props) => {
     //   ...userInput,
     //   enteredTitle: event.target.value,       --------- Alternative Approach -------------
     // });
+
+  
     setUserInput((prevState)=>{
       return {
       ...prevState,

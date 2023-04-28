@@ -4,6 +4,8 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 const ExpenseItem = (props) => {
 
+
+
   return (
     <Card className="expense-item">
       <ExpenseDate date = {props.date}/>
@@ -11,9 +13,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
       </div>
       <div className="expense-item__price">{props.amount}</div>
-      <button>
-        Change Title
-      </button>
+     <button onClick={()=> {console.log(props);}}>Click me</button>
     </Card>
   );
 };
